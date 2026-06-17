@@ -1,0 +1,80 @@
+@import url("../colors/colors.css");
+
+*{
+  all:unset;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+}
+
+.modules-left, .modules-right, .modules-center{
+  background-color:@background;
+  color:@text;
+  font-size:12px;
+  margin-top:4px;
+  margin-left:10px;
+  margin-right:10px;
+  padding:5px;
+  border-radius: 40px 40px 40px 40px;
+}
+
+.modules-left{
+  transition: all 1s ease-out;
+}
+
+#workspaces{
+  background-color: @surface_bright;
+  min-width: 100px;
+  padding-right:5px;
+  padding-left:5px;
+  margin-right:2px;
+  margin-left:2px;
+  border-radius:20px;
+}
+
+#workspaces button,#clock,#battery,#pulseaudio,#mpris,#network,#temperature{
+  background-color: @surface_bright;
+  padding-left:5px;
+  padding-right:5px;
+  margin-left:2px;
+  margin-right:2px;
+  border-radius:20px;
+}
+
+#pulseaudio, #network{
+  padding-right: 10px;
+}
+
+#workspaces button{
+  background:@border;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#workspaces button.active{
+  background-color: @text;
+}
+
+#workspaces button.empty{
+  color:@muted;
+}
+
+#battery{
+  min-width: 40px;
+}
+
+#mpris{
+  font-size:10px;
+  opacity:1;
+  transition: all 0.4s ease-out;
+}
+#mpris.paused{
+  opacity: 0;
+  background-color: transparent;
+  padding:0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+#mpris.empty{
+  opacity: 0;
+  background-color: transparent;
+  padding:0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
