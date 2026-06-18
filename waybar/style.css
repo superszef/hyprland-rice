@@ -21,7 +21,7 @@
 }
 
 #workspaces{
-  background-color: @surface_bright;
+  background-color: @surface;
   min-width: 100px;
   padding-right:5px;
   padding-left:5px;
@@ -31,7 +31,7 @@
 }
 
 #workspaces button,#clock,#battery,#pulseaudio,#mpris,#network,#temperature{
-  background-color: @surface_bright;
+  background-color: @surface;
   padding-left:5px;
   padding-right:5px;
   margin-left:2px;
@@ -44,16 +44,17 @@
 }
 
 #workspaces button{
-  background:@border;
+  background:@surface_bright;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-#workspaces button.active{
-  background-color: @text;
 }
 
 #workspaces button.empty{
   color:@muted;
+}
+
+#workspaces button.active{
+  background-color: @text;
+  color:@text;
 }
 
 #battery{

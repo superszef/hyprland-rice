@@ -41,8 +41,8 @@ hl.config({
 
         blur = {
             enabled   = true,
-            size      = 20,
-            passes    = 3,
+            size      = 5,
+            passes    = 2,
             vibrancy  = 0.1696,
         },
     },
@@ -106,6 +106,10 @@ hl.config({
     },
 })
 
+hl.layer_rule({
+    match = { namespace = "rofi" },
+    blur = true
+})
 ----------------
 ----  MISC  ----
 ----------------
