@@ -106,10 +106,6 @@ hl.config({
     },
 })
 
-hl.layer_rule({
-    match = { namespace = "rofi" },
-    blur = true
-})
 ----------------
 ----  MISC  ----
 ----------------

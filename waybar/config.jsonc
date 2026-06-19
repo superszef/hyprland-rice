@@ -1,31 +1,35 @@
 {
     "layer": "top",
-    "modules-left": ["hyprland/workspaces","mpris"],
-    "modules-center": ["clock"],
+    "modules-left": ["clock#time","clock#day"],
+    "modules-center": ["hyprland/workspaces"],
     "modules-right": ["network","pulseaudio","temperature","battery"],
     "hyprland/workspaces": {
-	  "format": "{name}",
+	  "format": " ",
 	  "format-icons": {
-		  "1": "",
-		  "2": "",
-		  "3": "",
-		  "4": "",
-		  "5": ""
+		  "": "",
+		  "": "",
+		  "": "",
+		  "": "",
+		  "": ""
 	    }
     },
       "battery": {
         "interval": 60,
-        "format": "{capacity}% {icon}",
+        "format": "{icon}",
         "format-icons": {
           "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
           "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
-      }
+      },
+      "tooltip": false
     },
-    "clock": {
-      "format-alt": "{:%a, %d. %b  %H:%M}"
+    "clock#time": {
+      "format": " {:%H:%M}"
+    },
+    "clock#day":{
+      "format": "󰭦 {:%A %d}"
     },
     "pulseaudio": {
-      "format": "{volume}% {icon}",
+      "format": "{icon} {volume}%",
       "format-bluetooth": "{volume}% {icon}",
       "format-muted": "",
       "format-icons": {
@@ -40,34 +44,25 @@
         "car": "",
         "default": ["", ""]
       },
-        "scroll-step": 1,
-        "on-click": "pavucontrol",
-        "ignored-sinks": ["Easy Effects Sink"]
-    },
-    "mpris": {
-	    "format": "{dynamic}",
-	    "format-paused": " ",
-	    "player-icons": {
-		    "default": "▶",
-		    "mpv": "🎵"
-	    },
-	    "status-icons": {
-		    "paused": "⏸"
-	    },
-      "interval": 1
+      "scroll-step": 1,
+      "on-click": "pavucontrol",
+      "ignored-sinks": ["Easy Effects Sink"],
+      "tooltip": false
     },
     "network": {
       "interface": "wlp3s0",
-      "format-wifi": "{essid} ",
+      "format-wifi": "󰤨",
       "format-ethernet": "󰊗",
-      "format-disconnected": "DISCONNECTED" //An empty format will hide the module.
+      "format-disconnected": "󰤮",
+      "tooltip": false
     },
     "temperature": {
     // "thermal-zone": 2,
     // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     // "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C ",
-      "format": "{temperatureC}°C",
-      "interval":60
+      "format": "󰈸 {temperatureC}°C",
+      "interval":60,
+      "tooltip": false
     }
 }

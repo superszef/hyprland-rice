@@ -9,7 +9,7 @@ configuration {
 /*****----- Global Properties -----*****/
 @import                          "../colors/colors.rasi"
 *{
-    font: "JetBrainsMono Nerd Font 10";
+    font: "JetBrainsMono Nerd Font Propo Medium 10";
 }
 
 /*****----- Main Window -----*****/
