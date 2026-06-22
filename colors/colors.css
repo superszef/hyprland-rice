@@ -1,4 +1,4 @@
-@define-color color0 #141318; /* Głęboka, bardzo ciemna purpura / Czerń */
+@define-color color0 #141318;
 @define-color color1 #272228;
 @define-color color2 #6D3D3D;
 @define-color color3 #FFF9F0;
@@ -6,19 +6,14 @@
 @define-color color5 #7d0f1f;
 @define-color color6 #a8141d;
 @define-color color7 #d3181c;
-@define-color color8 #ff252b; /* Najjaśniejsza, żywa czerwień */
+@define-color color8 #ff252b;
 @define-color color9 #E9C6B2;
-/* --- Mapowanie semantyczne (Aliasy dla łatwiejszego kodowania) --- */
-@define-color background       @color0; /* Główne tło paska */
-@define-color surface          @color1; /* Tło pojedynczych modułów */
-@define-color surface_bright   @color2; /* Tło dla aktywnych elementów (np. aktywny tag) */
-@define-color border           @color3; /* Kolor ramek / obramowania */
-
-@define-color muted            @color4; /* Ciemna czerwień dla mniej ważnych elementów */
-@define-color accent_dark      @color5; /* Ciemny akcent */
-@define-color accent           @color6; /* Główny akcent */
-@define-color accent_bright    @color7; /* Jasny akcent / Powiadomienia */
-@define-color text             @color9; /* Kolor tekstu / Najjaśniejszy punkt */
-
-/* Alternatywny tekst (jeśli potrzebujesz białego/jasnego na ciemnym tle) */
-@define-color text_white       #ffffff;
+@define-color background       @color0;
+@define-color surface          @color1;
+@define-color surface_bright   @color2;
+@define-color border           @color3;
+@define-color muted            @color4;
+@define-color accent_dark      @color5;
+@define-color accent           @color6;
+@define-color accent_bright    @color7;
+@define-color text             @color9;
